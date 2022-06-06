@@ -20,3 +20,9 @@ update _layout with
 <partial name="_LoginPartial" />
 
 to add the login page on all pages
+
+
+---- customize the login
+dotnet aspnet-codegenerator identity --dbContext RazorPagesPizzaAuth --files "Account.Manage.EnableAuthenticator;Account.Manage.Index;Account.Register;Account.ConfirmEmail" --userClass RazorPagesPizzaUser --force
+
+
